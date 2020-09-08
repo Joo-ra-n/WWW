@@ -71,19 +71,19 @@ gem install
 #### Ruby 설치하기
 [Ruby Installer 공식 페이지](https://rubyinstaller.org/)  
 일단 위의 페이지로 들어가서 빨갛고 커다란 Download를 누르면 다음과 같은 창이 뜰 것이다.  
-![RubyInstaller](../Softwarehighschool/statics/classdata/jekyll/rubyinstaller.PNG)  
+![RubyInstaller](../SoftwareHighSchool/statics/classdata/jekyll/rubyinstaller.PNG)  
 우리가 사용할 버전은 2.6.6-1이고, 대단히 친절하게도 두꺼운 글씨로 되어 있다.
 혹여 그럴 사람은 없겠지만 32비트 윈도우를 사용 중이라면 바로 아래에 있는 x86을 받아서 설치하면 된다. 설치파일을 다운로드 받은 후 실행시켜 보자.
 
-![rubyinstall1](../Softwarehighschool/statics/classdata/jekyll/rubyinstall1.png)  
-![rubyinstall2](../Softwarehighschool/statics/classdata/jekyll/rubyinstall2.png)  
+![rubyinstall1](../SoftwareHighSchool/statics/classdata/jekyll/rubyinstall1.png)  
+![rubyinstall2](../SoftwareHighSchool/statics/classdata/jekyll/rubyinstall2.png)  
 설치 중 위의 사진처럼 체크해주고 설치를 진행하면 된다. 두 번째 사진의 경우 딱히 쓸 일은 없지만, 혹시를 위해 설치해둔다고 생각하면 편하다. 설치에 시간이 좀 소요되는데, 물이라도 한 잔 마시면서 기다리도록 하자.
 
 모두 설치가 되었다면, 다음과 같은 창이 뜰 것이다.  
-![rubyinstall3](../Softwarehighschool/statics/classdata/jekyll/rubyinstall3.png)  
+![rubyinstall3](../SoftwareHighSchool/statics/classdata/jekyll/rubyinstall3.png)  
 여기서 Finish를 눌러주면
 
-![rubyinstall4](../Softwarehighschool/statics/classdata/jekyll/rubyinstall4.png)  
+![rubyinstall4](../SoftwareHighSchool/statics/classdata/jekyll/rubyinstall4.png)  
 위와 같은 창이 뜨는데, unsure하기 때문에 1,3 을 치고 Enter를 눌러주면 파일이 설치가 되고,
 다 됐을 때 엔터를 한 번 더 누르면 터미널 창이 꺼지게 된다. 그리고 파이참을 재시작 후, 터미널 창에서
 ```
@@ -119,9 +119,9 @@ Minima, Clean Blog 등 유명한 테마들이 포함되어 있다. Jekyll은 구
 우리가 참고할 [블로그 주소](https://theorydb.github.io/)이고,  
 [블로그 깃헙 주소](https://github.com/theorydb/theorydb.github.io)를 눌러보자.
 
-![githubfork](../Softwarehighschool/statics/classdata/jekyll/githubfork.png)  
+![githubfork](../SoftwareHighSchool/statics/classdata/jekyll/githubfork.png)  
 fork를 누르고, 나의 repository를 선택해주면 나의 repository에 fork된다. 그 후, fork한 나의 repository에 들어가서 톱니바퀴 모양을 눌러 설정 창으로 들어가자. 다음과 같은 창이 나올 것이다.  
-![forksetting](../Softwarehighschool/statics/classdata/jekyll/forksetting.PNG)  
+![forksetting](../SoftwareHighSchool/statics/classdata/jekyll/forksetting.PNG)  
 빨간색 네모 친 부분(repository name)을 `username.github.io`로 바꿔주자. 본인의 username은 Joo-ra-n 이기 때문에
 ```
 Joo-ran.github.io
@@ -131,10 +131,10 @@ Joo-ran.github.io
 https://username.github.io
 ```
 를 입력하면...  
-![githubpages404error](../Softwarehighschool/statics/classdata/jekyll/githubfork.png)  
+![githubpages404error](../SoftwareHighSchool/statics/classdata/jekyll/githubfork.png)  
 404 에러가 뜬다! Github Pages에 리얼타임으로는 반영이 되지 않으므로 잠시 기다려 주도록 하자. 잠시 기다린 후 다시 주소를 쳐보면..
 
-![githubpageswelldone](../Softwarehighschool/statics/classdata/jekyll/githubpageswelldone.png)  
+![githubpageswelldone](../SoftwareHighSchool/statics/classdata/jekyll/githubpageswelldone.png)  
 원래의 블로그를 잘 베껴온 모습이다. 이로써 내용물은 남의 것이지만, 어쨌든 내 username으로 된 블로그가 하나 생겼다. 이제 이 블로그를 내 입맛에 맞게 조금씩 바꾸어나가는 작업을 하게 될 것이다.. 
 
 이제 이 베껴온 블로그를 로컬에서 편집하기 위해 Pycharm을 켜고, terminal에 다음과 같이 입력해주자.
@@ -205,9 +205,9 @@ TEST 중
 그리고 이제 좌측 목차의 배경, 전체 배경, favicon, logo, footer 정도를 바꿔주면 꽤 그럴듯해 보이게 되는데, 이것들은 `_config.yml` 파일과, `assets` 폴더에서 관리할 수 있다.
 `_config.yml` 파일을 열어보면 뭔가 주루루루루룩 나오는데 여기에 있는 영어로 된 설명을 잘 읽어보고 하나하나 바꿔보면 된다.
 세세하게 설명을 해 주고 싶지만.. 개인마다 원하는 바가 조금씩 다르기 때문에 실제로 보이는 부분와 그 부분에 대응하는 코드 부분을 비교해 가면서 바꿔 보는 게 가장 좋다고 생각하는 바이다.  
-![jekyllblogdone](../Softwarehighschool/statics/classdata/jekyll/jekyllblogdone.png)  
+![jekyllblogdone](../SoftwareHighSchool/statics/classdata/jekyll/jekyllblogdone.png)  
 (내가 만든 블로그 예시)
-![opengraph](../Softwarehighschool/statics/opengraph.png)  
+![opengraph](../SoftwareHighSchool/statics/opengraph.png)  
 (내가 만든 블로그 오픈그래프)
 
 마지막으로.. DISQUS라는 API를 이용하여 포스트의 댓글 기능을 구현할 텐데, ~~고맙게도~~ 블로그 원래 주인 분께서 잘 짜 놓으셔서 처음에는 DISQUS API가 포스팅 하단에 잘 붙어 있을 것이다.
