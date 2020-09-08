@@ -204,9 +204,9 @@ TEST 중
 또 `_data/authors.yml` 파일을 확인해보면 내부에 social 탭이 있는데, 여기를 참조해주면 좌측 목차가 있는 곳 하단에 내 SNS를 삽입할 수도 있다.
 그리고 이제 좌측 목차의 배경, 전체 배경, favicon, logo, footer 정도를 바꿔주면 꽤 그럴듯해 보이게 되는데, 이것들은 `_config.yml` 파일과, `assets` 폴더에서 관리할 수 있다.
 `_config.yml` 파일을 열어보면 뭔가 주루루루루룩 나오는데 여기에 있는 영어로 된 설명을 잘 읽어보고 하나하나 바꿔보면 된다.
-세세하게 설명을 해 주고 싶지만.. 개인마다 원하는 바가 조금씩 다르기 때문에 실제로 보이는 부분와 그 부분에 대응하는 코드 부분을 비교해 가면서 바꿔 보는 게 가장 좋다고 생각하는 바이다.  
+세세하게 설명을 해 주고 싶지만.. 개인마다 원하는 바가 조금씩 다르기 때문에 실제로 보이는 부분와 그 부분에 대응하는 코드 부분을 비교해 가면서 바꿔 보는 게 가장 좋다고 생각하는 바이다.    
 ![jekyllblogdone](../SoftwareHighSchool/statics/classdata/jekyll/jekyllblogdone.png)  
-(내가 만든 블로그 예시)
+(내가 만든 블로그 예시)  
 ![opengraph](../SoftwareHighSchool/statics/opengraph.png)  
 (내가 만든 블로그 오픈그래프)
 
