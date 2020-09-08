@@ -231,8 +231,11 @@ gem install bundle
 gem install github-pages
 gem install tzinfo-data
 ``` 
-처음부터 블로그를 만들기는 대단히 어려운 작업이기 때문에, 다음 사이트들을 참고하여 마음에 드는 테마를 구하자.
-하지만 이번 수업에서는 편의를 위해 완성되어 있는 블로그를 사용할 것이다.  
+ 
+블로그를 처음부터 만들기는 대단히 어렵고 시간이 많이 드는 작업이기 때문에, 이번 수업에서는 완성되어 있는 블로그를 사용해 내 블로그를 만들어볼 것이다.   
+아니 남의 블로그 가져와서 내 블로그를 만든다고?! 집을 지을 때 벽돌부터 빚어내 굽지는 않듯이 우리도 기능 하나하나 구현해가며 블로그를 만들 필요가 없다.   
+조립식주택 같은 블로그라고 생각하면 이해가 편할 것이다. 바꿔도 되고, 그대로 써도 되고, 기능을 추가해 확장해도 되고, 필요없는 기능은 빼면 된다.   
+다음 사이트들을 참고하여 마음에 드는 테마를 구해보자.   
 
 [https://github.com/topics/jekyll-theme](https://github.com/topics/jekyll-theme)  
 [http://jekyllthemes.org/](http://jekyllthemes.org/)  
@@ -340,12 +343,13 @@ TEST 중
 [여기](https://disqus.com/admin/settings/advanced/)를 누르고, 아래쪽 I wanna... 뭐시기를 누르면 초기 페이지 설정이 뜨는데, 거기에 trusted domain에 `"username".github.io`를 추가해 주면 DISQUS가 포스팅 하단에 잘 붙는 것을 확인할 수 있을 것이다.   
  
 ## 블로그 제작 후
-지금까지 우리는 HTML로 페이지를 작성하고, CSS로 꾸미고, Github을 통해서 페이지를 호스팅해봤습니다.  
-그런데, `username.github.io`라는 주소는 아직 너무 불편합니다. `DNS`를 배우면서 우리가 원하는 주소로 바꿔봅시다.  
+지금까지 우리는 HTML로 페이지를 작성하고, CSS로 꾸미고, Github을 통해서 페이지를 호스팅해봤다.  
+그런데, `username.github.io`라는 주소는 아직 너무 불편하다. `DNS`를 배우면서 우리가 원하는 주소로 바꿔보자.  
 
 ### DNS?  
 
 DNS란 `Domain Name System`의 약자로, 쉽게 말해서 도메인 주소와 네트워크주소를 연결해주는 시스템이라고 생각하면 된다.  
+![DNS](https://user-images.githubusercontent.com/45495211/92323657-6126e400-f075-11ea-8c78-6f1bf1bb5a83.jpg)   
 지금은 우리가 `Github`을 통해서 호스팅을 했지만 실제 사이트를 호스팅 할 때에는 처음에는 서버컴퓨터의 IP 주소를 이용해서 호스팅 하게된다.  
 예를 들어 주소창에 `125.209.222.141`을 검색하면 곧바로 네이버로 연결된다.  
 네이버를 호스팅해주는 서버의 IP주소`(125.209.222.141)`와 도메인`(naver.com)`이 연결된 상태이다.  
@@ -366,7 +370,7 @@ DNS란 `Domain Name System`의 약자로, 쉽게 말해서 도메인 주소와 �
 ![domain](./statics/classdata/5th/domain.PNG)  
 
 이렇게 원하는 도메인을 검색해보면 사용할 수 있는 도메인의 목록이 나온다!  
-물론 무료도메인이기 때문에 예쁜것은 없다... 맘에 드는 것을 선택하자.  
+물론 무료도메인이기 때문에 예쁜 것은 없다... 맘에 드는 것을 선택하자.  
 선택한 후 보안코드를 입력하고 등록을 하면 아래와 같은 페이지가 나온다.  
 
 ![domain2](./statics/classdata/5th/domain2.PNG)  
@@ -375,13 +379,14 @@ DNS란 `Domain Name System`의 약자로, 쉽게 말해서 도메인 주소와 �
 만약 깃헙 페이지가 아닌 일반 서버를 통해 호스팅해서 주소를 연결해야 하는 경우라면 `IP연결`을 체크한 후  
 IP주소를 입력하면 된다.  
 
-모든 작업을 완료 했다면, `ljbang.kro.kr`의 형태로 주소창에 입력하면 내가 만든 페이지가 나타남을 확인할 수 있다!  
+모든 작업을 완료했다면, `ljbang.kro.kr`의 형태로 주소창에 입력하면 내가 만든 페이지가 나타남을 확인할 수 있다!  
 
 
 ### 검색엔진에 사이트 등록 하기
 
 홈페이지를 만들었다고 끝이 아니다!  
-홈페이지를 만들었으면 우리가 홈페이지를 만들었다고 검색엔진에 알려줘야한다.  
+홈페이지를 만들었으면 우리가 홈페이지를 만들었다고 검색엔진에 알려줘야한다.
+
 대표적인 검색엔진인 `네이버`와 `구글`에 우리 사이트를 알려보자.  
 
 먼저 국민 사이트 네이버부터 등록해보자  
@@ -458,3 +463,97 @@ IP주소를 입력하면 된다.
 
 그러면 추적 ID와 범용 사이트 태그 부분이 나오는데, 추적 ID는 복사해서 `_config.yml` 파일의 Google Analytics 부분을 수정해주고,
 범용 사이트 부분을 알맞게 수정해 주면 등록이 완료되게 된다.
+
+### 사실 지킬 애초에 안깔아도 됐다고??
+설치 단계에서 애먹은 사람은 허탈하겠지만 그렇다. 미안하다(그래도 다 해보고 나은 방법도 추가로 배우는 게 낫지 않은가). Jekyll은 remote theme을 지원해 로컬 컴퓨터에 Ruby, Jekyll을 설치하지 않고도 블로그를 만들 수 있게 해뒀다.
+
+* 장점
+    - 더 쉽고 빠르다 : 프로그램 설치를 안해도 되니까!
+    - 멋있는 블로그 : 수백 개가 넘는 수준급의 Jekyll theme이 공개되어있어 그대로 가져다 쓰기만 하면 된다.
+* 단점
+    - 앞서 했던 방법보다는 커스터마이징이 더 제한적이다. 이미 있는 테마를 그대로 가져와 쓰기 때문   
+    
+그럼 시작해볼까?   
+
+#### 새 저장소(repository) 만들기
+
+Github에서 새 레포를 판다. 이때 저장소 이름은 ```username.github.io```로 짓습니다. 이렇게 해야 ```username.github.io```의 도메인으로 접속할 수 있게 된다(웹 할 때 배웠쥬?)
+
+* 프로젝트 별 페이지 만들기
+프로젝트별로 만들 수도 있다. 이때는 프로젝트 이름이 꼭 ```username.github.io```이어야 할 필요가 없지만 프로젝트 페이지 주소는 ```username.github.io/projectname```이 된다.
+
+<img width="844" alt="makeRepo" src="https://user-images.githubusercontent.com/45495211/92323659-6421d480-f075-11ea-8272-de0fc1a0bbff.png">   
+
+#### 마음에 드는 Jekyll 테마 찾기
+Github에 이미 좋은 테마들이 많으니 하나 골라 보자.   
+[Jekyll themes](https://github.com/topics/jekyll-theme)   
+
+여기서는 제일 상단에 뜨는 minimal-mistakes를 사용해보겠다.
+<img width="845" alt="JkTheme" src="https://user-images.githubusercontent.com/45495211/92323661-65530180-f075-11ea-9ce8-433c53b01d2a.png">   
+
+#### ```_config.yml``` 파일 가져오기
+
+선택한 테마 레포에서 'Go to file'로 ```_config.yml``` 파일을 찾아보자. 그대로 파일 내용 전체를 복사한다.
+내가 만든 레포로 돌아와 'Add file'을 누르고 ```_config.yml``` 파일을 만들어 복사해온 내용을 그대로 붙여넣는다.   
+
+이 파일은 모든 Jekyll 사이트가 갖고 있는 설정 파일이다. 주석을 천천히 읽어보면 설정들을 어렵지 않게 이해할 수 있다.
+
+문서 앞부분에 보면 주석 처리 되어 있는 코드 중 ```# remote_theme : "mmistakes/minimal-mistakes"```가 있다.
+주석을 해제하고 내용을 감싸고 있는 큰따옴표도 지워주자.   
+```remote_theme : mmistakes/minimal-mistakes```   
+이렇게 한 줄을 추가한다.
+
+그리고 url과 baseurl 두 줄을 수정한다. url은 ```yourname```을 자신의 username으로 바꾸고, baseurl은 빈 문자열로 둔다.
+```
+url                      : "https://yourname.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+```
+
+* 프로젝트별 페이지를 만들 때는 baseurl을 ₩₩₩/projectname```처럼 쓰면 된다. 그렇게 두어야 ```https://yourname.github.io/projectname``` url로 접속할 수 있다.   
+
+설정 파일 주석을 읽어보면서 제목, 부제목, 저자, 설명, 페이스북 설정 등 원하는 대로 설정을 더 바꿔보자.  
+
+#### index 파일 가져오기
+
+- 선택한 테마 레포에서 index 파일을 찾아보자. 테마마다 다른데 index.html이나 index.md 등 확장자는 다르지만 이름은 모두 index다. 이 파일이 jekyll이 사이트 생성할 때 가장 처음 보여주는 페이지가 된다.
+- ```_config.yml``` 파일처럼 index 파일도 동일하게 자기 저장소에서 만든다.
+
+index.html의 내용:
+```
+---
+layout: home
+author_profile: true
+---
+```
+
+<img width="842" alt="index_content" src="https://user-images.githubusercontent.com/45495211/92323662-66842e80-f075-11ea-9913-b105beb43ef3.png">
+
+- 테마에 따라 추가로 가져와야 하는 파일이 있을 수도 있다. 페이지가 제대로 작동하지 않는다면 지킬 테마 페이지로 가서 필요한 파일을 확인해주자.
+
+#### ```_posts``` 폴더에 새 포스트 쓰기
+
+자신의 Github 저장소에서 *Create New File*을 눌러 새 파일을 생성한다. 파일 이름은 ```_posts/YYYY-MM-DD-name-of-post.md```로 한다. 파일 이름은 크게 상관없지만 일반적으로 저 형식대로 쓴다. 
+
+- 파일 내용 맨 처음 : 글의 제목, 날짜 등   
+이 형식은 Front matter라고 하며, Jekyll에서 메타 데이터를 확인하는 방법이다. 이 정보도 테마에 따라 들어가는 정보가 조금씩 달라질 수 있으니 확인해보자.
+
+```
+---
+title: "Welcome to Jekyll!"
+date: 2020-09-02 17:06:00 -0400
+categories: jekyll update
+---
+```
+
+- 이후 내용 : 쓰고 싶은 내용을 마크다운으로 쓰면 된다. 
+
+> 내 파일 스크린샷 삽입
+
+#### 완성된 블로그 확인하기
+
+<img width="844" alt="finished_blog" src="https://user-images.githubusercontent.com/45495211/92323663-671cc500-f075-11ea-9afc-86186fc9a449.png">   
+
+이렇게 Jekyll remote theme을 이용해 쉽고 빠르게 블로그를 만들어 보았다. 
+
+여기서 더 나아가 ```_layouts```, ```_includes```, ```_sass```, ```assets```등의 폴더들도 추가해
+css 커스터마이징을 해보자. 
